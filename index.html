@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textmark</title>
+</head>
+<body style="text-align: center;">
+    <h2 id="input">Hello World</h2>
+    <textarea cols="80" rows="8" >
+
+    </textarea>
+    <!-- <div id="test">hello world</div> -->
+    <p></p>
+    <div id="output">output</div>
+
+    <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+    <script>
+        let input = document.getElementById('input')
+        let output = document.getElementById('output')
+        let turndownService = new window.TurndownService()
+        let another = "<div>this is cool</div>"
+        // let next = "<a href='www.google.com'>link to Google</a>"
+
+        output.textContent = turndownService.turndown(another)
+        
+    </script>
+</body>
+</html>
