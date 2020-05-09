@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>textmark</title>
-</head>
-<body style="text-align: center;">
-    <h2 id="input">Hello World</h2>
-    <textarea cols="80" rows="8" >
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/pell/dist/pell.min.css">
+    <style>
+      .pell-content {
+        background-color: pink;
+      }
+    </style>
+  </head>  
+  <body style="text-align: center; margin: 0 auto; background-color: antiquewhite;">
+    <h1>Hello world!</h1>
 
-    </textarea>
-    <!-- <div id="test">hello world</div> -->
+    <div id="pell-editor"></div>
     <p></p>
-    <div id="output">output</div>
 
+    <div id="pell-output">Output</div>
+    <script src="./pell.js"></script>
     <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
-    <script>
-        let input = document.getElementById('input')
-        let output = document.getElementById('output')
-        let turndownService = new window.TurndownService()
-        let another = "<div>this is cool</div>"
-        // let next = "<a href='www.google.com'>link to Google</a>"
-
-        output.textContent = turndownService.turndown(another)
-        
+    <!-- <script type="module" src="./main.js"></script> -->
+    <script type="module" >
+      import {init} from './pell'
     </script>
-</body>
+  </body>
 </html>
