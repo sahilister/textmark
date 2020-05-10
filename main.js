@@ -1,10 +1,15 @@
-import {init} from 'pell'
+import { init } from './pell.js'
+import TurndownService from './turndown.js'
+// import TurnDown from 'https://unpkg.com/turndown/dist/turndown.js';
+
+const turndownService = new TurndownService({ headingStyle: 'atx'})
+
 init({
   element: document.getElementById('pell-editor'),
 
   onChange: html => {
+    document.getElementById('pell-output').textContent = turndownService.turndown(html)
     // document.getElementById('pell-output').textContent = html
-    document.getElementById('pell-output').textContent = html
   },
 
   defaultParagraphSeparator: 'div',
@@ -42,4 +47,6 @@ init({
   }
 })
 
-const turndownService = new window.TurndownService()
+
+// const { turndown } = new TurnDown({headingStyle: 'atx'})
+
