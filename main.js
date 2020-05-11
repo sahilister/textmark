@@ -8,7 +8,8 @@ init({
   element: document.getElementById('pell-editor'),
 
   onChange: html => {
-    document.getElementById('pell-output').textContent = turndownService.turndown(html)
+    document.getElementById('pell-output').textContent = (html)
+    document.getElementById('turndown-output').textContent = turndownService.turndown(html)
     // document.getElementById('pell-output').textContent = html
   },
 
