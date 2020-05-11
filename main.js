@@ -1,8 +1,11 @@
 import { init } from './pell.js'
 import TurndownService from './turndown.js'
+import turndownPluginGfm from './turndownPluginGfm.js'
 // import TurnDown from 'https://unpkg.com/turndown/dist/turndown.js';
 
+const gfm = turndownPluginGfm.gfm 
 const turndownService = new TurndownService({ headingStyle: 'atx'})
+turndownService.use(gfm)
 
 init({
   element: document.getElementById('pell-editor'),
