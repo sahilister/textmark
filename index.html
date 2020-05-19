@@ -6,29 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="/style.css"> -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/pell/dist/pell.min.css">
-    <style>
+    <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/pell/dist/pell.min.css"> -->
+    <!-- <style>
       .pell-content {
         background-color: pink;
       }
-    </style>
+    </style> -->
+    <link rel="stylesheet" href="trix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <script src="trix.js"></script>
   </head>  
-  <body style="text-align: center; margin: 0 auto; background-color: antiquewhite;">
-    <h1>Hello world!</h1>
-
-    <div id="pell-editor"></div>
+  <body style="width: 70%; margin: 0 auto;">
+    <h1>Trix Editor</h1>
+    <input id="x" value="Write it out..." type="hidden" name="content">
+    <trix-editor class="trix-content" input="x"></trix-editor>
+    <div class="trix-content">Stored content here</div>
+    <!-- <div id="pell-editor"></div>
     <p></p>
     <h3>Pell Output</h3>
     <div id="pell-output"></div>
 
     <p></p>
     <h3>Turndown Output</h3>
-    <div id="turndown-output"></div>
+    <div id="turndown-output"></div> -->
     
     <!-- <script src="./pell.js"></script> -->
     <!-- <script src="https://unpkg.com/turndown/dist/turndown.js"></script> -->
     <!-- <script type="module" src="./main.js"></script> -->
-    <script type="module" src="main.js"></script>
+    <!-- <script type="module" src="main.js"></script> -->
   </body>
 </html>
 
