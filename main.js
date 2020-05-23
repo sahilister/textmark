@@ -5,12 +5,11 @@ const turndownService = new TurndownService({ headingStyle: 'atx'})
 turndownService.use(gfm)
 console.log("start text")
 
-function update() {
-  let trixOutput =  document.getElementById('trix-output')
-  let turndownOutput = document.getElementById('turndown-output')
-  turndownOutput.innerHTML = turndownService.turndown(trixOutput.value)
-  console.log(trixOutput.value)
-}
+let trixOutput =  document.getElementById('trix-output')
+let turndownOutput = document.getElementById('turndown-output')
+turndownOutput.innerHTML = turndownService.turndown(trixOutput.value)
+console.log(trixOutput.value)
+
 
 
 // turndownOutput.textContent = turndownService.turndown('<h2>hello world</h2>')
