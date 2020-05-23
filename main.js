@@ -10,8 +10,6 @@ let turndownOutput = document.getElementById('turndown-output')
 turndownOutput.innerHTML = turndownService.turndown(trixOutput.value)
 console.log(trixOutput.value)
 
-
-
 // turndownOutput.textContent = turndownService.turndown('<h2>hello world</h2>')
 //
 // const { turndown } = new TurnDown({headingStyle: 'atx'})

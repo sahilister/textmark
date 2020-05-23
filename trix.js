@@ -1615,12 +1615,14 @@ http://trix-editor.org/
                             group: !1
                         },
                         code: {
-                            tagName: "pre",
+                            tagName: "code",
+                            // tagName: ["pre","code"],
                             terminal: !0,
-                            text: {
-                                plaintext: !0
-                            }
+                            // text: {
+                            //     plaintext: !0
+                            // }
                         },
+                        
                         bulletList: {
                             tagName: "ul",
                             parse: !1
