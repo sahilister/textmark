@@ -10,23 +10,3 @@ addEventListener('trix-change', () => {
     turndownOutput.innerHTML = turndownService.turndown(trixOutput.value)
     console.log(trixOutput.value)
 })
-
-
-// turndownOutput.textContent = turndownService.turndown('<h2>hello world</h2>')
-//
-// const { turndown } = new TurnDown({headingStyle: 'atx'})
-// actions: [
-//   'bold',    
-//   'italic',
-//   'strikethrough',
-//   'heading1',
-//   'heading2',
-//   // 'paragraph'  - from github You can create a new paragraph by leaving a blank line between lines of text.
-//   'quote',
-//   'olist',
-//   'ulist',
-//   'code',
-//   'line', // horizontal lines
-//   'link', 
-//   // to be looked into 'image'
-// ],
