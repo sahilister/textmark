@@ -1,5 +1,5 @@
-import TurndownService from './turndown.js'
-import turndownPluginGfm from './turndownPluginGfm.js'
+import TurndownService from '../dist/turndown.min.js'
+import turndownPluginGfm from '../dist/turndownPluginGfm.min.js'
 const gfm = turndownPluginGfm.gfm 
 const turndownService = new TurndownService({ headingStyle: 'atx'})
 turndownService.use(gfm)
