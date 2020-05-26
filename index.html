@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <title>textmark</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,21 +22,51 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/trix@1.2.3/dist/trix.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/gh/sahilister/textmark/dist/trix.js"></script>
   </head>  
-  <body style="width: 70%; margin: 0 auto;">
-    <h1>textmark</h1>
-    <trix-editor class="trix-content" input="trix-output"></trix-editor>
-    <p></p>
-    <input id="trix-output" value="Enter text" name="content" type="hidden"> 
-    <!-- hidden element for html output -->
-    <p></p> 
-    <output id="" value="Turndown output" name="content"></output>
-    <h3>markdown</h3>
-    <p></p>
-    <textarea readonly cols="80" rows=10 id="turndown-output"></textarea>
-    <div id="turndown-output"></div>
+  <body>
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="container">
+          <div class="title">
+            <h1>TEXTMARK</h1>
+          </div>
+          <div class="subtitle">
+            <h2>text to markdown</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div>   
+          <trix-editor class="trix-content" input="trix-output"></trix-editor>
+          <input id="trix-output" value="Enter text" name="content" type="hidden"> 
+          <!-- hidden element for html output -->
+        </div>
+      </div>
+    
+      <div class="container">
+        <h3>markdown</h3>
+        <textarea class="textarea" readonly cols="90" rows=10 id="turndown-output"></textarea>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <a href="https://github.com/sahilister/textmark" style="color: inherit;">
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+        <p>
+          <a href="https://github.com/sahilister/textmark" style="color: inherit;"><strong>Textmark</strong></a> by <a href="https://github.com/sahilister">sahilister</a>. The source code is licensed
+          <a href="https://github.com/sahilister/textmark/blob/master/LICENSE">MIT</a>. 
+        </p>
+      </div>
+    </footer>
 
     <script src="./js/main.js" type="module"></script>
   </body>
