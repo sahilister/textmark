@@ -5,18 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="/style.css"> -->
-    <link rel="stylesheet" href="./trix.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/trix@1.2.3/dist/trix.min.css">
     <script src="./trix.js"></script>
-    <script src="./turndown.js"></script>
   </head>  
   <body style="width: 70%; margin: 0 auto;">
     <h1>Trix Editor</h1>
     <trix-editor class="trix-content" input="trix-output"></trix-editor>
     <p></p>
-    <input id="trix-output" value="Enter text" name="content" type="hidden">
-    <p></p>
+    <input id="trix-output" value="Enter text" name="content" type="hidden"> 
+    <!-- hidden element for html output -->
+    <p></p> 
     <output id="" value="Turndown output" name="content"></output>
     <h3>Turndown Output</h3>
     <p></p>
