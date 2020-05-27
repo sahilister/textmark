@@ -1,13 +1,13 @@
 # Textmark
 ### text to markdown
 
-**Create beautiful md files with ease.** [Textmark](https://textmark.js.org/) is a tool to write in rich text format in a text editor and getting the corresponding markdown output for all the .md files.  
+Create beautiful md files with ease. [Textmark](https://textmark.js.org/) is a tool to write in rich text format in a text editor and getting the corresponding markdown output for all the .md files.  
 [https://textmark.js.org/](https://textmark.js.org/)  
   
 ## Credits
 
-*   [domechristie](https://github.com/domchristie) for [turndown](https://github.com/domchristie/turndown) and [turndown-plugin-gfm](https://github.com/domchristie/turndown-plugin-gfm)
-*   [basecamp](https://github.com/basecamp) for [trix-editor](https://github.com/basecamp/trix)
+*   [@domechristie](https://github.com/domchristie) for [turndown](https://github.com/domchristie/turndown) and [turndown-plugin-gfm](https://github.com/domchristie/turndown-plugin-gfm)
+*   [@basecamp](https://github.com/basecamp) for [trix-editor](https://github.com/basecamp/trix)
 
   
 ## Contribution  
