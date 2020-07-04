@@ -22,8 +22,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="https://cdn.quilljs.com/1.0.0/quill.bubble.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="./js/vendor/quill.min.js" charset="utf-8"></script>
   </head>
@@ -41,15 +43,21 @@
       </div>
     </section>
 
+    <div class="container is-fluid">
+
+    </div>
     <section class="section columns">
       <div class="column is-half">
           <div id="editor"></div>
       </div>
       <div class="column is-half">
-        <h3>markdown</h3>
-        <textarea class="textarea" rows="15"  id="turndown-output"></textarea>
+        <textarea class="textarea" readonly style="height:500px;" id="turndown-output">
+          Markdown will appear here
+          - Images can be inserted by copy pasting
+        </textarea>
       </div>
     </section>
+  </div>
 
     <footer class="footer">
       <div class="content has-text-centered">

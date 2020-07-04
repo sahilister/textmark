@@ -4,7 +4,6 @@ const gfm = turndownPluginGfm.gfm
 const turndownService = new TurndownService({ headingStyle: 'atx'})
 turndownService.use(gfm)
 
-
 let toolbarOptions = [
   ['bold', 'italic', 'strike'],
   [{ 'header': 1 }, { 'header': 2 }],
@@ -17,6 +16,7 @@ let quill = new Quill('#editor', {
   modules: {
     toolbar: toolbarOptions
   },
+  placeholder: 'Write it out...',
   theme: 'snow'
 })
 
