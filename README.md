@@ -7,7 +7,7 @@ Create beautiful md files with ease. [Textmark](https://textmark.js.org/) is a t
 ## Credits
 
 *  [@domechristie](https://github.com/domchristie) for [turndown](https://github.com/domchristie/turndown) and [turndown-plugin-gfm](https://github.com/domchristie/turndown-plugin-gfm)
-*  [quill editor](https://github.com/quilljs/quill)
+*  [@quill js](https://github.com/quilljs) for [quill editor](https://github.com/quilljs/quill)
 
 
 ## Contribution  
