@@ -21,7 +21,7 @@ Textmark can do following:
 *   images via direct online paste
 
 
-## Credits
+## Acknowledgments
 
 *  [@domechristie](https://github.com/domchristie) for [turndown](https://github.com/domchristie/turndown) and [turndown-plugin-gfm](https://github.com/domchristie/turndown-plugin-gfm)
 *  [@jhchen](https://github.com/jhchen) for [quill](https://github.com/quilljs/quill)
