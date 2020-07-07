@@ -2,7 +2,7 @@
 ### rich text to markdown
 ### [https://textmark.js.org](https://textmark.js.org/) 
 
-I was always fascinated with the looks and feel of markdown format. It's so simple and minimalistic but would always have issues writing perfect markdown. So I wrote textmark to do it. Essentially you have a rich text editor for text input. Corresponding markdown for it appears on the right. Simply copy the markdown in you `.md` files. An Editor for all your markdown needs.
+I was always fascinated with the looks and feel of markdown format. It's so simple and minimalistic but would always have issues writing perfect markdown. Using available open source tools, i made textmark to do it. Essentially you have a [rich text editor](https://github.com/quilljs/quill) for text input. Corresponding markdown for it appears on the right. Simply copy the markdown in you `.md` files. An Editor for all your markdown needs.
 
 ## Features
 
